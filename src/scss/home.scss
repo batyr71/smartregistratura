@@ -1,0 +1,490 @@
+@import "main.scss";
+
+.container{
+  max-width: 280px;
+  margin: 0 auto;
+  @media (min-width: 1170px) {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+.header{
+  background-color: white;
+  @media (min-width:1170px){
+    background-color: #eeeef3;
+  }
+  .container{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+.mobile-nav{
+  a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+  }
+  span {
+    width: 30px;
+    height: 2px;
+    background-color: $blue;
+  }
+  @media (min-width: 1170px) {
+    display: none;
+  }
+}
+.header-contacts {
+  display: none;
+  @media (min-width:1170px){
+    width: 764px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  a{
+    display: block;
+    text-align: right;
+  }
+  address a{
+    font-size: 65%;
+    color: $blue;
+    text-decoration: underline;
+  }
+  .header-dropdown{
+    display: flex;
+    align-items: center;
+  }
+  .phone{
+    font-size: 25px;
+    font-weight: bold;
+    span{
+      font-weight: normal;
+      color: grey;
+    }
+  }
+  .mail{
+    font-size: 18px;
+  }
+
+}
+.call{
+  @media (min-width:1170px){
+    display: none;
+  }
+}
+.navbar{
+  background-color: white;
+  display: none;
+  @media (min-width:1170px){
+    display: block;
+  }
+  .container{
+    padding: 8px 0; 
+    display: flex;
+    justify-content: flex-end;
+  }
+  a{
+    color: black;
+    margin-left: 125px;
+    &:hover{
+      color: $blue;
+    }  
+  }
+
+}
+.breadcrumbs {
+  background-color: $blue;
+  color: white;
+  .container{
+    height: 51px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  a {
+    color: white;
+  }
+  .breadcrumbs-lvl1{
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .breadcrumbs-lvl1{
+    text-transform: uppercase;
+    font-weight: bold;
+
+  }
+  span {
+    margin: 0 10px;
+  }
+}
+.profile-info {
+  padding: 18px 0 16px;
+
+  p{
+    margin-bottom: 5px;
+  }
+}
+.profile-info-header{
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    margin-bottom: 20px;
+    line-height: 1.1;
+    @media (min-width:1170px){
+      font-size: 36px;
+    }
+  }
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 50px;
+    color: white;
+    background-color: $blue;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
+.profile-info-items{
+  display: flex;
+  flex-direction: column;
+}
+.profile-info-item{
+  display: flex;
+  flex-direction: column;
+  @media (min-width:1170px){
+    font-size: 24px;
+    flex-direction: row;
+    h4{
+      width: 324px;
+      font-weight: bold;
+    }
+  }
+}
+.records {
+  background-color: #eeeef3;
+  h2 {
+    padding: 18px 0;
+  }
+}
+.record-card{
+  background-color: white;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  @media (min-width:1170px){
+    margin-bottom: 18px;
+    flex-direction: row;
+    height: 150px;
+    align-items: center;
+  }
+}
+.record-card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  font-size: 120%;
+  h4{
+    margin: 5px 0;
+  }
+  @media (min-width:1170px){
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 1110px;
+  }
+}
+.record-name{
+  order: 1;
+  @media (min-width:1170px){
+    width: 280px;
+    padding-left: 40px;
+  }
+}
+.record-doctor{
+  order: 2;
+  h4{
+    display: none;
+    @media (min-width:1170px){
+      display: block;
+    }
+  }
+  @media (min-width:1170px){
+    padding: 0 80px 0 20px; 
+  }
+
+}
+.record-date{
+  order: 4;
+  @media (min-width:1170px){
+    padding: 0 40px 0 18px; 
+
+  }
+}
+.record-room{
+  order: 4;
+  @media (min-width:1170px){
+    order: 3;
+  }
+  @media (min-width:1170px){
+    padding: 0 18px 0 18px; 
+  }
+}
+.record-time{
+  order: 5;
+  @media (min-width:1170px){
+    padding: 0 0 0 18px; 
+  }
+}
+.record-card-button{
+  width: 100%;
+  background-color: $blue;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+  a{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 90%;
+  }
+  @media (min-width:1170px){
+    flex: 50px;
+    height: 100%;
+    align-self: stretch;
+  }
+  
+}
+.record-button {
+  flex: 80%;
+  @media (min-width:1170px){
+    display: none;
+  }
+}
+.record-trash {
+  flex: 20%;
+  border-left: 1px solid white;
+  align-self: stretch;
+  padding: 3px;
+  @media (min-width:1170px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.show-more{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 19px;
+  a{
+    background-color: $blue;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 90%;
+    width: 240px;
+  }
+
+}
+
+.tickets-form{
+  background-color: #eeeef3;
+  @media (min-width:1170px){
+    padding-bottom: 40px;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    @media (min-width:1170px){
+      flex-direction: row;
+    }
+    .tickets-form-input{
+      @media (min-width:1170px){
+        flex: 2;
+      }
+    }
+    .tickets-form-submit{
+      display: flex;
+      @media (min-width:1170px){
+      flex: 3;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+    } 
+  }
+  /* The container */
+  .tickets-form-label {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .tickets-form-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 2px solid $blue;
+    border-radius: 5px;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .tickets-form-label:hover input ~ .checkmark {
+    background-color: $blue;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .tickets-form-label input:checked ~ .checkmark {
+    background-color: $blue;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .tickets-form-label input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .tickets-form-label .checkmark:after {
+    left: 3px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  input[type="tel"], input[type="email"]{
+    width: 280px;
+    height: 50px;
+  }
+  button[type="submit"]{
+    padding: 8px 0;
+    background-color: $blue;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 90%;
+    width: 240px;
+    height: 30px;
+    margin: 15px auto;
+    @media (min-width:1170px){
+      margin: 0;
+      width: 230px;
+      height: 50px;
+      align-self: flex-end;
+    }
+  }
+}
+
+.footer{
+  background-color: white;
+  padding: 25px 0 0 0;
+  @media (min-width:1170px){
+    margin-top: 25px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @media (min-width:1170px){
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}
+.footer-logo{
+  margin-bottom: 20px;
+}
+.footer-contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 18px;
+  address{
+    font-size: 14px;
+
+    a{
+      font-size: 65%;
+      color: $blue;
+      text-decoration: underline;    }
+  }
+  .phone{
+    font-size: 18px;
+    font-weight: bold;
+    span{
+      font-weight: normal;
+      color: grey;
+    }
+  }
+  .mail{
+    font-size: 14px;
+  }
+  @media (min-width:1170px){
+    align-items: flex-end;
+    text-align: right;
+  }
+}
+
+.footer-navbar{
+  display: none;
+  a{
+    color: black;
+    margin-left: 50px;
+    font-size: 18px;
+    &:hover{
+      color: $blue;
+    }  
+  }
+  @media (min-width:1170px){
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 59%;
+}
+
+}
+.copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $blue;
+  height: 50px;
+  color: white;
+}
