@@ -186,21 +186,38 @@
   }
 }
 .record-card-info {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 10px 10px;
   font-size: 120%;
+  max-height: 125px;
+  overflow: hidden;
+  transition: height 0.2s linear;
   h4{
     margin: 5px 0;
   }
   @media (min-width:1170px){
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     width: 1110px;
+    height: 100%;
   }
 }
+.open-toggler{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  cursor: pointer;
+}
+
 .record-name{
   order: 1;
+  width: 230px;
   @media (min-width:1170px){
     width: 280px;
     padding-left: 40px;
@@ -241,6 +258,7 @@
     padding: 0 0 0 18px; 
   }
 }
+
 .record-card-button{
   width: 100%;
   background-color: $blue;
