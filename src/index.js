@@ -6,6 +6,7 @@ import './images/trash.png';
 import './images/mail-envelope.png';
 import './images/placeholder.png';
 import './images/dropdown-icon.png';
+import './images/down-arrow.svg';
 
 
   document.querySelector(".open-toggler").addEventListener('click', function () {
