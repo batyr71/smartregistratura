@@ -1,134 +1,7 @@
 @import "main.scss";
 
-.container{
-  max-width: 280px;
-  margin: 0 auto;
-  @media (min-width: 1170px) {
-    max-width: 1170px;
-    margin: 0 auto;
-  }
-}
-.header{
-  background-color: white;
-  @media (min-width:1170px){
-    background-color: #eeeef3;
-  }
-  .container{
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
 
-}
-.mobile-nav{
-  a{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 25px;
-  }
-  span {
-    width: 30px;
-    height: 2px;
-    background-color: $blue;
-  }
-  @media (min-width: 1170px) {
-    display: none;
-  }
-}
 
-.header-logo{
-  width: 120px;
-  height: 40px;
-  @media (min-width:1170px){
-    width: 160px;
-    height: 50px;
-  }
-}
-.header-contacts {
-  display: none;
-  @media (min-width:1170px){
-    width: 764px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  a{
-    display: block;
-    text-align: right;
-  }
-  address a{
-    font-size: 65%;
-    color: $blue;
-    text-decoration: underline;
-  }
-  .header-dropdown{
-    display: flex;
-    align-items: center;
-  }
-  .phone{
-    font-size: 25px;
-    font-weight: bold;
-    span{
-      font-weight: normal;
-      color: grey;
-    }
-  }
-  .mail{
-    font-size: 18px;
-  }
-
-}
-.call{
-  @media (min-width:1170px){
-    display: none;
-  }
-}
-.navbar{
-  background-color: white;
-  display: none;
-  @media (min-width:1170px){
-    display: block;
-  }
-  .container{
-    padding: 8px 0; 
-    display: flex;
-    justify-content: flex-end;
-  }
-  a{
-    color: black;
-    margin-left: 125px;
-    &:hover{
-      color: $blue;
-    }  
-  }
-
-}
-.breadcrumbs {
-  background-color: $blue;
-  color: white;
-  .container{
-    height: 51px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
-  a {
-    font-size: 14px;
-    color: white;
-  }
-  .breadcrumbs-lvl1{
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  .breadcrumbs-lvl2{
-  }
-  span {
-    margin: 0 10px;
-  }
-}
 .profile-info {
   padding: 18px 0 16px;
   .container{
@@ -186,7 +59,10 @@
     }
   }
   p{
-    font-size: 24px;
+    font-size: 14px;
+    @media (min-width:1170px) {
+      font-size: 24px;
+    }
   }
 }
 .records {
@@ -469,86 +345,4 @@
       align-self: flex-end;
     }
   }
-}
-
-.footer{
-  background-color: white;
-  padding: 25px 0 0 0;
-  @media (min-width:1170px){
-    margin-top: 25px;
-  }
-  .container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    @media (min-width:1170px){
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  }
-}
-.footer-logo{
-  width: 120px;
-  height: 40px;
-  margin-bottom: 20px;
-}
-.footer-contacts{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 18px;
-  address{
-    font-size: 14px;
-    margin-bottom: 10px;
-    a{
-      font-size: 65%;
-      color: $blue;
-      text-decoration: underline;    }
-  }
-  .phone{
-    font-size: 18px;
-    font-weight: bold;
-    span{
-      font-weight: normal;
-      color: grey;
-    }
-  }
-  .mail{
-    font-size: 14px;
-  }
-  @media (min-width:1170px){
-    align-items: flex-end;
-    text-align: right;
-  }
-}
-
-.footer-navbar{
-  display: none;
-  a{
-    color: black;
-    margin-left: 50px;
-    font-size: 18px;
-    &:hover{
-      color: $blue;
-    }  
-  }
-  @media (min-width:1170px){
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 59%;
-}
-
-}
-.copyright{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: $blue;
-  height: 50px;
-  color: white;
-  font-size: 14px;
 }

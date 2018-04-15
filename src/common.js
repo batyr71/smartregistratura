@@ -1,0 +1,12 @@
+import './images/logo.png';
+import './images/call-answer.svg';
+import './images/call-answer.png';
+import './images/trash.png';
+import './images/mail-envelope.png';
+import './images/placeholder.png';
+import './images/dropdown-icon.png';
+import './images/down-arrow.svg';
+import './images/google-plus.svg';
+import './images/facebook.svg';
+import './images/odnoklassniki-logo.svg';
+import './images/vk.svg';

@@ -5,24 +5,27 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    index: './src/index.js',
-    print: './src/print.js'
+    profile: './src/profile.js',
+    exit: './src/exit.js',
+    common: './src/common.js'
   },
   devServer: {
     contentBase: './dist'
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin(),
     new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: 'src/index.html',
-      chunks: ['index']
-
+      title: 'Профиль пользователя',
+      filename: 'profile.html',
+      template: 'src/profile.html',
+      chunks: ['common', 'profile']
     }),
     new HtmlWebpackPlugin({
-      filename: 'print.html',
-      template: 'src/print.html',
-      chunks: ['print']
+      title: 'Выход',
+      filename: 'exit.html',
+      template: 'src/exit.html',
+      chunks: ['common', 'exit']
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
@@ -35,7 +38,6 @@ module.exports = {
   output: {
     filename: 'scripts/[name].js',
     path: path.resolve(__dirname, 'dist'),
-
   },
   module: {
     rules: [
@@ -43,9 +45,7 @@ module.exports = {
         test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
-         /*  {
-            loader: "style-loader" 
-          }, */ {
+          {
             loader: "css-loader" 
           }, {
             loader: "sass-loader"
@@ -60,7 +60,7 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'images/',
-              publicPath: '../images'
+              publicPath: 'images/'
             }  
           }
         ]
@@ -73,11 +73,20 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'fonts/',
-              publicPath: '../fonts'
+              publicPath: 'fonts/'
             }  
           }
         ]
-      }
+      },
+/*       {
+        test: /\.html$/,
+        use: [ 'html-loader' ]
+      },
+      {
+        test: /\.html$/,
+        use: [ 'file-loader?name=[name].[ext]' ],
+        exclude: path.resolve(__dirname, 'src/index.html')
+      }, */
     ]
   }
 };
