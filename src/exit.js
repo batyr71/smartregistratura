@@ -1,1 +1,0 @@
-import './scss/exit.scss';

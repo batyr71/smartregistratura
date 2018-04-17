@@ -1,0 +1,145 @@
+@import "main.scss";
+body{
+  background-color: #eeeef3;
+}
+.patient-history{
+  padding: 18px 0 16px;
+  background-color: #eeeef3;
+  @media (min-width:1170px){
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    width: 75%;
+    @media (min-width:1170px){
+      font-size: 26px;
+      width: 425px;
+    }
+  }
+  p {
+    margin-bottom: 13px;
+    font-size: 16px;
+    width: 75%;
+    line-height: 1.5;
+    @media (min-width:1170px){
+      width: 65%;
+      font-size: 24px;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50px;
+    justify-content: flex-start;
+    background-color: grey;
+    margin-bottom: 25px;
+    z-index: 1;
+    overflow: hidden;
+    @media (min-width:1170px){
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      background-color: white;
+      font-size: 20px;
+    }
+    li {
+      background-color: grey;
+      height: 50px;
+      padding: 15px;
+      border: 1px solid white;
+      @media (min-width:1170px){
+        background-color: white;
+      }
+    }
+  }
+  .select-button{
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 30px;
+    color: white;
+    background-color: $blue;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    @media (min-width:1170px){
+      display: none;
+    }
+  }
+  .active-year {
+    text-decoration: underline;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    td, th {
+      border: 1px solid #cacaca;
+      padding: 8px;
+      height: 60px;
+    }
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: $blue;
+      color: white;
+    }
+    tr:nth-child(even){
+      background-color: white;
+    }
+    tr:hover {
+      background-color: #cacaca;
+    }
+    .check {
+      text-align: center;
+      display: none;
+      @media (min-width:1170px){
+        display: table-cell;
+      }
+    }
+    .type {
+    }
+    .date {
+      text-align: center;
+    }
+    .file {
+      text-align: center;
+      img{
+        width: 25px;
+        height: 35px;
+      }
+    }
+  }
+
+  .download-button{
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 30px;
+    color: white;
+    background-color: $blue;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 25px 0;
+    display: none;
+    @media (min-width:1170px){
+      display: flex;
+      width: 235px;
+      height: 50px;
+      font-size: 14px;
+    }
+  }
+
+}
+
+

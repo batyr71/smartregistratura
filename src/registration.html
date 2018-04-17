@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/print.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/profile.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+  </head>
+
+  <body>
+    <!-- HEADER START -->
+    <div class="header">
+      <div class="container">
+        <div class="mobile-nav">
+          <a href="">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="header-logo">
+          <a href="index.html"><img src="images/logo.png" alt=""></a>
+        </div>
+        <div class="header-contacts">
+          <address>
+            <img src="images/placeholder.png" alt=""> г. Москва ул. Козыревская д.35
+            <a href="">Посмотреть на карте</a>
+          </address>
+          <a href="mailto:example@mail.com" class="mail">
+            <img src="images/mail-envelope.png" alt=""> testing@mail.com
+          </a>
+          <div class="header-dropdown">
+            <a href="tel:+79257300122" class="phone">
+              <img src="images/call-answer.png" alt="">
+              <span>+7 973 </span>522-15-11
+            </a>
+            <a href="">
+              <img src="images/dropdown-icon.png" alt="">
+            </a>
+          </div>
+        </div>
+        <a href="tel:+79257300122" class="call">
+          <img src="images/call-answer.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="container">
+        <a href="index.html">Профиль пользователя</a>
+        <a href="appointment.html">Запись на прием</a>
+        <a href="history.html">История болезни</a>
+      </div>
+    </div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <a href="" class="breadcrumbs-lvl1">Главная</a>
+        <span>&#9656;</span>
+        <a href="" class="breadcrumbs-lvl2"><%= htmlWebpackPlugin.options.title %></a>
+      </div>
+    </div>
+
+    <!-- HEADER BREADCRUMBS END -->
+
+      <div class="registration-form">
+        <div class="container">
+          <h2>Регистрация</h2>
+          <p>Данные аккаунта</p>
+          <div class=" registration-form-input">
+            <input type="email" name="" id="" placeholder="E-mail*">
+            <span class="form-tip">E-mail используется для  входа в Ваш аккаунт</span>
+          </div>
+          <div class=" registration-form-input">
+            <input type="password" name="" id="" placeholder="Пароль*">
+          </div>
+          <div class=" registration-form-input">
+            <input type="password" name="" id="" placeholder="Повторите пароль*">
+          </div>
+          <p>Для доступа к клинике</p>
+          <div class=" registration-form-input">
+            <input type="text" name="" id="" placeholder="Фамилия*" class="input-error">
+            <span class="form-error">Не заполнено обязательное поле</span>
+          </div>
+          <div class=" registration-form-input">
+            <input type="text" name="" id="" placeholder="Имя*">
+          </div>
+          <div class=" registration-form-input">
+            <input type="tel" name="" id="" placeholder="Номер телефона">
+          </div>
+          <div class=" registration-form-input">
+            <input type="text" name="" id="" placeholder="Дата рождения" onfocus="(this.type='date')" onblur="(this.type='text')">
+          </div>
+          <div class=" registration-form-input">
+            <input type="text" name="" id="" placeholder="Номер карты клиента">
+          </div>
+            <a href="" class="registration-submit">Зарегестрироваться</a>
+            <p class="i-accept">Нажимая «Зарегестрироваться», я принимаю <a href="">условия пользовательского соглашени</a>, положения о защите персональных данных и даю свое <a href=""> согласие на обработку персональных данных</a></p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="">
+          </div>
+          <div class="footer-navbar">
+            <a href="">Профиль пользователя</a>
+            <a href="">Запись на прием</a>
+            <a href="">История болезни</a>
+          </div>
+          <div class="footer-contacts">
+            <a href="tel:+79257300122" class="phone">
+              <img src="images/call-answer.png" alt="">
+              <span>+7 973 </span>522-15-11
+            </a>
+            <address>
+              <img src="images/placeholder.png" alt=""> г. Москва ул. Козыревская д.35
+              <a href="">Посмотреть на карте</a>
+            </address>
+            <a href="mailto:example@mail.com" class="mail">
+              <img src="images/mail-envelope.png" alt=""> testing@mail.com
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>ООО СМАРТ-РЕГИСТРАТУРА</p>
+        </div>
+      </div>
+      <script src="scripts/profile.js"></script>
+    </body>
+    </html>
+
+</body>
+</html>

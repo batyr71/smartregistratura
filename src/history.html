@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/profile.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+  </head>
+
+  <body>
+    <!-- HEADER START -->
+    <div class="header">
+      <div class="container">
+        <div class="mobile-nav">
+          <a href="">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="header-logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+          </div>
+        <div class="header-contacts">
+          <address>
+            <img src="images/placeholder.png" alt=""> г. Москва ул. Козыревская д.35
+            <a href="">Посмотреть на карте</a>
+          </address>
+          <a href="mailto:example@mail.com" class="mail">
+            <img src="images/mail-envelope.png" alt=""> testing@mail.com
+          </a>
+          <div class="header-dropdown">
+            <a href="tel:+79257300122" class="phone">
+              <img src="images/call-answer.png" alt="">
+              <span>+7 973 </span>522-15-11
+            </a>
+            <a href="">
+              <img src="images/dropdown-icon.png" alt="">
+            </a>
+          </div>
+        </div>
+        <a href="tel:+79257300122" class="call">
+          <img src="images/call-answer.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="container">
+        <a href="index.html">Профиль пользователя</a>
+        <a href="appointment.html">Запись на прием</a>
+        <a href="history.html">История болезни</a>
+      </div>
+    </div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <a href="" class="breadcrumbs-lvl1">Главная</a>
+        <span>&#9656;</span>
+        <a href="" class="breadcrumbs-lvl2"><%= htmlWebpackPlugin.options.title %></a>
+      </div>
+    </div>
+
+    <!-- HEADER BREADCRUMBS END -->
+      <div class="patient-history">
+        <div class="container">
+          <h2>История болезни</h2>
+          <p>Выберите даты:</p>
+
+
+          <ul>
+            <li><a href="">За все время</a></li>
+            <li><a href="" class="active-year">2017</a></li>
+            <li><a href="">2016</a></li>
+            <li><a href="">2015</a></li>
+            <li><a href="">2014</a></li>
+            <li><a href="">2013</a></li>
+            <li><a href="">2012</a></li>
+            <li><a href="">2011</a></li>
+            <li><a href="">2010</a></li>
+            <li><a href="">2009</a></li>
+          </ul>
+          <a href="" class="select-button">Применить</a>
+          <table>
+            <tbody>
+            <tr>
+              <th class="check"></td>
+              <th class="type">Тип</td>
+              <th class="date">Дата</td>
+              <th class="file">Файлы</td>
+            </tr>
+            <tr>
+              <td class="check"><input type="checkbox" name="" id=""></td>
+              <td class="type">Протокол приема</td>
+              <td class="date">22.04.2017</td>
+              <td class="file"><img src="images/pdf.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td class="check"><input type="checkbox" name="" id=""></td>
+              <td class="type">Протокол приема</td>
+              <td class="date">22.04.2017</td>
+              <td class="file"><img src="images/pdf.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td class="check"><input type="checkbox" name="" id=""></td>
+              <td class="type">Протокол приема</td>
+              <td class="date">22.04.2017</td>
+              <td class="file"><img src="images/pdf.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td class="check"><input type="checkbox" name="" id=""></td>
+              <td class="type">Протокол приема</td>
+              <td class="date">22.04.2017</td>
+              <td class="file"><img src="images/pdf.svg" alt=""></td>
+            </tr>
+            <tr>
+              <td class="check"><input type="checkbox" name="" id=""></td>
+              <td class="type">Протокол приема</td>
+              <td class="date">22.04.2017</td>
+              <td class="file"><img src="images/pdf.svg" alt=""></td>
+            </tr>
+          </tbody>
+          </table>
+          <a href="" class="download-button">Скачать выделенные файлы</a>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="">
+          </div>
+          <div class="footer-navbar">
+            <a href="">Профиль пользователя</a>
+            <a href="">Запись на прием</a>
+            <a href="">История болезни</a>
+          </div>
+          <div class="footer-contacts">
+            <a href="tel:+79257300122" class="phone">
+              <img src="images/call-answer.png" alt="">
+              <span>+7 973 </span>522-15-11
+            </a>
+            <address>
+              <img src="images/placeholder.png" alt=""> г. Москва ул. Козыревская д.35
+              <a href="">Посмотреть на карте</a>
+            </address>
+            <a href="mailto:example@mail.com" class="mail">
+              <img src="images/mail-envelope.png" alt=""> testing@mail.com
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>ООО СМАРТ-РЕГИСТРАТУРА</p>
+        </div>
+      </div>
+      <script src="scripts/profile.js"></script>
+    </body>
+    </html>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/profile.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+  </head>
+
+  <body>
+    <!-- HEADER START -->
+    <div class="header">
+      <div class="container">
+        <div class="mobile-nav">
+          <a href="">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="header-logo">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+          </div>
+        <div class="header-contacts">
+          <address>
+            <img src="images/placeholder.png" alt=""> г. Москва ул. Козыревская д.35
+            <a href="">Посмотреть на карте</a>
+          </address>
+          <a href="mailto:example@mail.com" class="mail">
+            <img src="images/mail-envelope.png" alt=""> testing@mail.com
+          </a>
+          <div class="header-dropdown">
+            <a href="tel:+79257300122" class="phone">
+              <img src="images/call-answer.png" alt="">
+              <span>+7 973 </span>522-15-11
+            </a>
+            <a href="">
+              <img src="images/dropdown-icon.png" alt="">
+            </a>
+          </div>
+        </div>
+        <a href="tel:+79257300122" class="call">
+          <img src="images/call-answer.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="container">
+        <a href="index.html">Профиль пользователя</a>
+        <a href="appointment.html">Запись на прием</a>
+        <a href="history.html">История болезни</a>
+      </div>
+    </div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <a href="" class="breadcrumbs-lvl1">Главная</a>
+        <span>&#9656;</span>
+        <a href="" class="breadcrumbs-lvl2"><%= htmlWebpackPlugin.options.title %></a>
+      </div>
+    </div>
+
+    <!-- HEADER BREADCRUMBS END -->
+      <div class="success-header">
+        <div class="container">
+          <h2>Благодарим за использование нашей системы</h2>
+        </div>
+      </div>
+      <div class="success-check">
+        <h3>Ваша запись в клинику Центрмед</h3>
+        <div class="success-check-item">
+          <h4>Филиал №2</h4>
+          <p>г.Москва ул. Брестская д3 к4</p>
+        </div>
+        <div class="success-check-item">
+          <h4>Врач</h4>
+          <p>Александров Виктор Павлович</p>
+        </div>
+        <div class="success-check-item">
+          <h4>Специальность Врача</h4>
+          <p>Хирург травмотолог</p>
+        </div>
+        <div class="success-check-item">
+          <h4>Кабинет</h4>
+          <p>722</p>
+        </div>
+        <div class="success-check-item">
+          <h4>Дата приёма</h4>
+          <p>3 мая 2018г., четверг</p>
+        </div>
+        <div class="success-check-item">
+          <h4>Время приёма</h4>
+          <p>09:20</p>
+        </div>
+        <button class="print-chek">Печать</button>
+      </div>
+      <div class="succes-info">
+        <p>Ваша запись была отправлнеа на ваш почтовый ящик tree@ex.com Ес</p>
+        <p>Если Вы не можете прийти на прием в указанное время, сообщиете об этом по телефону 245-87-00</p>
+      </div>
+      <a href="index.html" class="home-button">На главную</a>
+      <div class="footer">
+        <div class="container">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="">
+          </div>
+          <div class="footer-navbar">
+            <a href="">Профиль пользователя</a>
+            <a href="">Запись на прием</a>
+            <a href="">История болезни</a>
+          </div>
+          <div class="footer-contacts">
+            <a href="tel:+79257300122" class="phone">
+              <img src="images/call-answer.png" alt="">
+              <span>+7 973 </span>522-15-11
+            </a>
+            <address>
+              <img src="images/placeholder.png" alt=""> г. Москва ул. Козыревская д.35
+              <a href="">Посмотреть на карте</a>
+            </address>
+            <a href="mailto:example@mail.com" class="mail">
+              <img src="images/mail-envelope.png" alt=""> testing@mail.com
+            </a>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>ООО СМАРТ-РЕГИСТРАТУРА</p>
+        </div>
+      </div>
+      <script src="scripts/profile.js"></script>
+    </body>
+    </html>
+
+</body>
+</html>

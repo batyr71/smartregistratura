@@ -26,6 +26,25 @@ address{
   font-style: normal;
 }
 
+ul, ol {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: $blue;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
 .container{
   max-width: 87.5%;
   margin: 0 auto;

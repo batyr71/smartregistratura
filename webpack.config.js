@@ -5,8 +5,14 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    profile: './src/profile.js',
-    exit: './src/exit.js',
+    index: './src/index.js',
+    history: './src/history.js',
+    login: './src/login.js',
+    logout: './src/logout.js',
+    card: './src/card.js',
+    registration: './src/registration.js',
+    appointment: './src/appointment.js',
+    success: './src/success.js',
     common: './src/common.js'
   },
   devServer: {
@@ -17,15 +23,51 @@ module.exports = {
     new HtmlWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Профиль пользователя',
-      filename: 'profile.html',
-      template: 'src/profile.html',
-      chunks: ['common', 'profile']
+      filename: 'index.html',
+      template: 'src/index.html',
+      chunks: ['common', 'index']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'История Болезни',
+      filename: 'history.html',
+      template: 'src/history.html',
+      chunks: ['common', 'history']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Вход',
+      filename: 'login.html',
+      template: 'src/login.html',
+      chunks: ['common', 'login']
     }),
     new HtmlWebpackPlugin({
       title: 'Выход',
-      filename: 'exit.html',
-      template: 'src/exit.html',
-      chunks: ['common', 'exit']
+      filename: 'logout.html',
+      template: 'src/logout.html',
+      chunks: ['common', 'logout']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Ввод номера карты',
+      filename: 'card.html',
+      template: 'src/card.html',
+      chunks: ['common', 'card']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Регистрация',
+      filename: 'registration.html',
+      template: 'src/registration.html',
+      chunks: ['common', 'registration']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Запись к врачу',
+      filename: 'appointment.html',
+      template: 'src/appointment.html',
+      chunks: ['common', 'appointment']
+    }),
+    new HtmlWebpackPlugin({
+      title: 'Запись к врачу',
+      filename: 'success.html',
+      template: 'src/success.html',
+      chunks: ['common', 'success']
     }),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output

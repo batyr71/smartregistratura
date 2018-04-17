@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/profile.css">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+
+  </head>
+
+  <body>
+    <!-- HEADER START -->
+    <div class="header">
+      <div class="container">
+        <div class="mobile-nav">
+          <a href="">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <div class="header-logo">
+          <a href="/">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="header-contacts">
+          <address>
+            <img src="images/placeholder.png" alt=""> г. Москва ул. Козыревская д.35
+            <a href="">Посмотреть на карте</a>
+          </address>
+          <a href="mailto:example@mail.com" class="mail">
+            <img src="images/mail-envelope.png" alt=""> testing@mail.com
+          </a>
+          <div class="header-dropdown">
+            <a href="tel:+79257300122" class="phone">
+              <img src="images/call-answer.png" alt="">
+              <span>+7 973 </span>522-15-11
+            </a>
+            <a href="">
+              <img src="images/dropdown-icon.png" alt="">
+            </a>
+          </div>
+        </div>
+        <a href="tel:+79257300122" class="call">
+          <img src="images/call-answer.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="container">
+        <a href="index.html">Профиль пользователя</a>
+        <a href="appointment.html">Запись на прием</a>
+        <a href="history.html">История болезни</a>
+      </div>
+    </div>
+    <div class="breadcrumbs">
+      <div class="container">
+        <a href="" class="breadcrumbs-lvl1">Главная</a>
+        <span>&#9656;</span>
+        <a href="" class="breadcrumbs-lvl2">
+          <%= htmlWebpackPlugin.options.title %>
+        </a>
+      </div>
+    </div>
+
+    <!-- HEADER BREADCRUMBS END -->
+
+    <div class="appointment">
+      <div class="container">
+        <div class="flex-header">
+          <h2>Невролог</h2>
+          <h2 class="selected-count">Выбрано записей: 2</h2>
+        </div>
+        <div class="appointment-info">
+          <div class="appontment-doctor">
+            <h3>Иванов Константин Константинович</h3>
+
+            <h4>Врач</h4>
+            <p>Терапевт, Невролог</p>
+
+            <h4>Стаж</h4>
+            <p>с 1995 года</p>
+
+            <h4>Категория, ученая степень</h4>
+            <p>Кандидат медицинских наук</p>
+            <p>Высшая категория</p>
+
+          </div>
+          <div class="appontment-time">
+            <div class="appontment-dates">
+              <button class="button-left">&#8249;</button>
+                  <div class="appontment-date">
+                    <p>Сб</p>
+                    <p><span class="round-day active">3</span><span>фев.</span></p>
+                  </div>
+                  <div class="appontment-date">
+                    <p>Вс</p>
+                    <p><span class="round-day">4</span><span>фев.</span></p>
+                  </div>
+                  <div class="appontment-date">
+                    <p>Пн</p>
+                    <p><span class="round-day disabled">5</span><span>фев.</span></p>
+                  </div>
+                  <div class="appontment-date">
+                    <p>Вт</p>
+                    <p><span class="round-day">6</span><span>фев.</span></p>
+                  </div>
+                  <div class="appontment-date">
+                    <p>Ср</p>
+                    <p><span class="round-day disabled">7</span><span>фев.</span></p>
+                  </div>
+                  <div class="appontment-date">
+                    <p>Чт</p>
+                    <p><span class="round-day disabled">8</span><span>фев.</span></p>
+                  </div>
+                  <div class="appontment-date">
+                    <p>Пт</p>
+                    <p><span class="round-day">9</span><span>фев.</span></p>
+                  </div>
+                  <button class="button-right">&#8250;</button>
+            </div>
+            <div class="appontment-hours">
+              <button class="button-up">&#8593;</button>
+              <div class="appontment-days">
+                <div class="day">
+                  <button>Суббота,<b>3 марта</b> <span>&#8594;</span></button>
+                  <p><span class= "day-time" >09:00</span><span class="select-day">Выбрать</span></p> 
+                  <p><span class= "day-time disabled" >09:30</span><span class="select-day disabled">Выбрать</span></p>
+                  <p><span class= "day-time disabled" >10:00</span><span class="select-day disabled">Выбрать</span></p>
+                  <p><span class= "day-time" >10:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time disabled" >11:00</span><span class="select-day disabled">Выбрать</span></p>
+                  <p><span class= "day-time" >11:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:00</span><span class="select-day ">Выбрать</span></p>
+                  <p><span class= "day-time" >12:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:30</span><span class="select-day">Выбрать</span></p>
+                </div>
+                <div class="day">
+                  <p><span class= "day-time" >09:00</span><span class="select-day">Выбрать</span></p> 
+                  <p><span class= "day-time" >09:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:30</span><span class="select-day">Выбрать</span></p>
+                </div>
+                <div class="day">
+                  <p><span class= "day-time" >09:00</span><span class="select-day">Выбрать</span></p> 
+                  <p><span class= "day-time" >09:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:30</span><span class="select-day">Выбрать</span></p>
+                </div>
+                <div class="day">
+                  <p><span class= "day-time" >09:00</span><span class="select-day">Выбрать</span></p> 
+                  <p><span class= "day-time" >09:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:30</span><span class="select-day">Выбрать</span></p>
+                </div>
+                <div class="day">
+                  <p><span class= "day-time" >09:00</span><span class="select-day">Выбрать</span></p> 
+                  <p><span class= "day-time" >09:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:30</span><span class="select-day">Выбрать</span></p>
+                </div>
+                <div class="day">
+                  <p><span class= "day-time" >09:00</span><span class="select-day ">Выбрать</span></p> 
+                  <p><span class= "day-time" >09:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:30</span><span class="select-day">Выбрать</span></p>
+                </div>
+                <div class="day">
+                  <p><span class= "day-time" >09:00</span><span class="select-day">Выбрать</span></p> 
+                  <p><span class= "day-time" >09:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >10:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >11:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >12:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >13:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >14:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >15:30</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:00</span><span class="select-day">Выбрать</span></p>
+                  <p><span class= "day-time" >16:30</span><span class="select-day">Выбрать</span></p>
+                </div>
+
+              </div>
+              <button class="button-down">&#8595;</button>
+              <div class="appontment-day-sum">
+                <div class="day-sum">
+                  <p>0 из 10</p>
+                  <p>доступно</p>
+                </div>
+                <div class="day-sum">
+                  <p>0 из 10</p>
+                  <p>доступно</p>
+                </div>
+                <div class="day-sum">
+                  <p>0 из 10</p>
+                  <p>доступно</p>
+                </div>
+                <div class="day-sum">
+                  <p>0 из 10</p>
+                  <p>доступно</p>
+                </div>
+                <div class="day-sum">
+                  <p>0 из 10</p>
+                  <p>доступно</p>
+                </div>
+                <div class="day-sum">
+                  <p>0 из 10</p>
+                  <p>доступно</p>
+                </div>
+                <div class="day-sum">
+                  <p>0 из 10</p>
+                  <p>доступно</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="appontment-buttons">
+          <a href="" class="appontment-button">Назад</a>
+          <a href="" class="appontment-button">Завершить <span> выбор записи</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer-logo">
+          <a href="">
+            <img src="images/logo.png" alt="">
+          </a>
+        </div>
+        <div class="footer-navbar">
+          <a href="index.html">Профиль пользователя</a>
+          <a href="appointment.html">Запись на прием</a>
+          <a href="history.html">История болезни</a>
+        </div>
+        <div class="footer-contacts">
+          <a href="tel:+79257300122" class="phone">
+            <img src="images/call-answer.png" alt="">
+            <span>+7 973 </span>522-15-11
+          </a>
+          <address>
+            <img src="images/placeholder.png" alt=""> г. Москва ул. Козыревская д.35
+            <a href="">Посмотреть на карте</a>
+          </address>
+          <a href="mailto:example@mail.com" class="mail">
+            <img src="images/mail-envelope.png" alt=""> testing@mail.com
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>ООО СМАРТ-РЕГИСТРАТУРА</p>
+      </div>
+    </div>
+    <script src="scripts/profile.js"></script>
+  </body>
+
+  </html>
+
+</body>
+
+</html>

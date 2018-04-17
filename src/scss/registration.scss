@@ -1,0 +1,94 @@
+@import "main.scss";
+body{
+  background-color: #eeeef3;
+}
+.registration-form{
+  padding: 18px 0 16px;
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media (min-width:1170px){
+      align-items: center;
+    }
+  }
+  h2 {
+    font-size: 20px;
+    margin-bottom: 18px;
+    width: 75%;
+    @media (min-width:1170px){
+      font-size: 26px;
+      text-align: center;
+    }
+  }
+  
+  input {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 11px;
+    border: 1px solid #d6d6da;
+    border-radius: 5px;
+    @media (min-width:1170px){
+      text-align: center;
+    }
+  }
+  .registration-form-input{
+    position: relative;
+  }
+  .form-error,.form-tip{
+    position: absolute;
+    top: 0;
+    left: 340px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .form-tip{
+    color: #838383;
+  }
+  .form-error{
+    color: #e18083;
+  }
+  .input-error{
+    color: red;
+    border: 1px solid #e18083;
+  }
+  .registration-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 30px;
+    color: white;
+    background-color: $blue;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0 0 25px 30px;
+    @media (min-width:1170px){
+      width: 235px;
+      height: 50px;
+      font-size: 14px;
+    }
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .i-accept {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    @media (min-width:1170px){
+      font-size: 14px;
+      width: 365px;
+    }
+    a{
+      display: inline;
+      text-decoration: underline;
+    }
+  }
+}
+
+
