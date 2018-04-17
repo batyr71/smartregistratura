@@ -1,4 +1,4 @@
-import './scss/index.scss';
+import './scss/profile.scss';
 
   document.querySelector(".open-toggler").addEventListener('click', function () {
     let par = this.parentElement;

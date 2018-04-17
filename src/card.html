@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
 <body>
@@ -61,7 +61,7 @@
     </div>
     <div class="navbar">
       <div class="container">
-        <a href="index.html">Профиль пользователя</a>
+        <a href="profile.html">Профиль пользователя</a>
         <a href="appointment.html">Запись на прием</a>
         <a href="history.html">История болезни</a>
       </div>
@@ -79,7 +79,7 @@
         <div class="container">
           <h2>Введите номер Вашей карты</h2>
           <input type="text" placeholder="Номер карты">
-          <a href="">На главную</a>
+          <a href="profile.html">На главную</a>
           <p>Номер карты не найден :(</p>
           <p>Попробуйте снова или обратитесь в поликлинику для уточнения данных</p>
         </div>

@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    index: './src/index.js',
+    profile: './src/profile.js',
     history: './src/history.js',
     login: './src/login.js',
     logout: './src/logout.js',
@@ -20,12 +20,12 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin(),
+/*     new HtmlWebpackPlugin(), */
     new HtmlWebpackPlugin({
       title: 'Профиль пользователя',
-      filename: 'index.html',
-      template: 'src/index.html',
-      chunks: ['common', 'index']
+      filename: 'profile.html',
+      template: 'src/profile.html',
+      chunks: ['common', 'profile']
     }),
     new HtmlWebpackPlugin({
       title: 'История Болезни',
@@ -53,7 +53,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Регистрация',
-      filename: 'registration.html',
+      filename: 'index.html',
       template: 'src/registration.html',
       chunks: ['common', 'registration']
     }),

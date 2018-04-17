@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
           </a>
         </div>
         <div class="header-logo">
-          <a href="/">
+          <a href="index.html">
             <img src="images/logo.png" alt="">
           </a>
         </div>
@@ -63,7 +63,7 @@
     </div>
     <div class="navbar">
       <div class="container">
-        <a href="index.html">Профиль пользователя</a>
+        <a href="profile.html">Профиль пользователя</a>
         <a href="appointment.html">Запись на прием</a>
         <a href="history.html">История болезни</a>
       </div>
@@ -302,7 +302,7 @@
         </div>
         <div class="appontment-buttons">
           <a href="" class="appontment-button">Назад</a>
-          <a href="" class="appontment-button">Завершить <span> выбор записи</span></a>
+          <a href="success.html" class="appontment-button">Завершить <span> выбор записи</span></a>
         </div>
       </div>
     </div>
