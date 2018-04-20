@@ -23,7 +23,7 @@ module.exports = {
 /*     new HtmlWebpackPlugin(), */
     new HtmlWebpackPlugin({
       title: 'Профиль пользователя',
-      filename: 'profile.html',
+      filename: 'index.html',
       template: 'src/profile.html',
       chunks: ['common', 'profile']
     }),
@@ -53,7 +53,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: 'Регистрация',
-      filename: 'index.html',
+      filename: 'registration.html',
       template: 'src/registration.html',
       chunks: ['common', 'registration']
     }),
